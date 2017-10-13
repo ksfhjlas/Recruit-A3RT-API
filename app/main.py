@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import pya3rt
 
 def main(argv):
-  # このコードは引数と標準出力を用いたサンプルコードです。
-  # このコードは好きなように編集・削除してもらって構いません。
-  # ---
-  # This is a sample code to use arguments and outputs.
-  # Edit and remove this code as you like.
+  apikey = "t3yTIONK5tfoySZIqukmblGZ7BXZgYO3"
+  client = pya3rt.TextSuggestClient(apikey)
+
 
   for i, v in enumerate(argv):
     print("argv[{0}]: {1}".format(i, v))
