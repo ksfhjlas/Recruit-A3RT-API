@@ -17,6 +17,6 @@ print "https://api.a3rt.recruit-tech.co.jp/text_suggest/v2/predict?%s" % params
 f = urllib.urlopen("https://api.a3rt.recruit-tech.co.jp/text_suggest/v2/predict?%s" % params)
 j=f.read()
 con=json.loads(j)
-
+#dsaf
 for i in con["suggestion"]:
     print in_moji+i
