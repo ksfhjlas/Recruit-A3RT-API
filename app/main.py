@@ -19,8 +19,7 @@ def main(argv):
   j = f.read()
   con = json.loads(j)
 
-  for i in con["suggestion"]:
-    print i
+  print con
 
   for i, v in enumerate(argv):
     print("argv[{0}]: {1}".format(i, v))
