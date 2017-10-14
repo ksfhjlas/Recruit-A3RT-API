@@ -22,8 +22,7 @@ def main(argv):
   for i in con["suggestion"]:
     b.append(in_moji + i)
 
-  for i in b:
-    print i
+  print con,b
 
   for i, v in enumerate(argv):
     print("argv[{0}]: {1}".format(i, v))
