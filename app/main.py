@@ -14,12 +14,16 @@ def main(argv):
                              'style': style,
                              'separation': separation,
                              })
-  print "https://api.a3rt.recruit-tech.co.jp/text_suggest/v2/predict?%s" % params
   f = urllib.urlopen("https://api.a3rt.recruit-tech.co.jp/text_suggest/v2/predict?%s" % params)
   j = f.read()
   con = json.loads(j)
 
-  print con
+  b=[]
+  for i in con["suggestion"]:
+    b.append(in_moji + i)
+
+  for i in b:
+    print i
 
   for i, v in enumerate(argv):
     print("argv[{0}]: {1}".format(i, v))
