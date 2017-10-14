@@ -20,7 +20,7 @@ def main(argv):
   con = json.loads(j)
 
   for i in con["suggestion"]:
-    print in_moji + i
+    print i
 
   for i, v in enumerate(argv):
     print("argv[{0}]: {1}".format(i, v))
